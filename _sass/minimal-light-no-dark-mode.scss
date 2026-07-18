@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
 .pub-row {
   display: flex; 
   align-items: center;}
@@ -515,4 +517,80 @@ footer {
   margin-left: 0px;
   display:none;
   font-family: monospace;
+}
+
+/* Fangyi's custom typography and colors */
+
+body {
+  background-color: #ffffff;
+  color: #202124;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+  letter-spacing: -0.005em;
+}
+
+p,
+li,
+ul,
+ol,
+table,
+section {
+  color: #202124;
+}
+
+header {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif;
+}
+
+header p,
+header email,
+autocolor {
+  color: #3c4043;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #111827;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif;
+  letter-spacing: -0.025em;
+}
+
+h1 {
+  font-size: 34px;
+  font-weight: 700;
+}
+
+h2 {
+  margin-top: 34px;
+  margin-bottom: 18px;
+  font-size: 27px;
+  font-weight: 650;
+}
+
+h3 {
+  margin-top: 24px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+strong {
+  color: #111827;
+  font-weight: 600;
+}
+
+a {
+  color: #1769aa;
+}
+
+a:hover {
+  color: #0b4f8a;
+  text-decoration: underline;
 }
