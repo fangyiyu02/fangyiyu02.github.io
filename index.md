@@ -17,4 +17,4 @@ Briefly introduce your second representative research project.
 
 **Links:** [Code](github-link) · [Demo](demo-link)
 
-{% include_relative _includes/publications.md %}
+{% include publications.md %}
