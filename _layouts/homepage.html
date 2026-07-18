@@ -35,12 +35,10 @@
     {% endif %}
 
   </head>
-  <body>
+ <body>
   <div class="page-shell">
 
-    <!-- 顶部：照片与个人信息 + Biography / Research Interests -->
     <div class="hero">
-
       <header class="profile-card">
 
         {% if site.avatar %}
@@ -52,110 +50,79 @@
         <h1>{{ site.title }}</h1>
 
         {% if site.position %}
-        <position style="font-size:1.10rem;">
-          {{ site.position }}
-        </position>
-        <br>
+        <p class="profile-position">{{ site.position }}</p>
         {% endif %}
 
         {% if site.affiliation %}
-        <a href="{{ site.affiliation_link }}" rel="noopener">
-          <autocolor>{{ site.affiliation }}</autocolor>
-        </a>
-        <br>
+        <p class="profile-affiliation">
+          <a href="{{ site.affiliation_link }}" rel="noopener">
+            {{ site.affiliation }}
+          </a>
+        </p>
         {% endif %}
 
         {% if site.email %}
-        <email>{{ site.email }}</email>
+        <p class="profile-email">{{ site.email }}</p>
         {% endif %}
 
         <div class="social-icons">
-
           {% if site.google_scholar %}
-          <a href="{{ site.google_scholar }}"
-             target="_blank"
-             rel="noopener"
-             aria-label="Google Scholar">
+          <a href="{{ site.google_scholar }}" aria-label="Google Scholar">
             <i class="ai ai-google-scholar"></i>
           </a>
           {% endif %}
 
           {% if site.cv_link %}
-          <a href="{{ site.cv_link }}"
-             target="_blank"
-             rel="noopener"
-             aria-label="CV">
+          <a href="{{ site.cv_link }}" aria-label="CV">
             <i class="ai ai-cv"></i>
           </a>
           {% endif %}
 
           {% if site.github_link %}
-          <a href="{{ site.github_link }}"
-             target="_blank"
-             rel="noopener"
-             aria-label="GitHub">
+          <a href="{{ site.github_link }}" aria-label="GitHub">
             <i class="fab fa-github"></i>
           </a>
           {% endif %}
 
           {% if site.linkedin %}
-          <a href="{{ site.linkedin }}"
-             target="_blank"
-             rel="noopener"
-             aria-label="LinkedIn">
+          <a href="{{ site.linkedin }}" aria-label="LinkedIn">
             <i class="fab fa-linkedin"></i>
           </a>
           {% endif %}
 
           {% if site.twitter %}
-          <a href="{{ site.twitter }}"
-             target="_blank"
-             rel="noopener"
-             aria-label="X">
+          <a href="{{ site.twitter }}" aria-label="X">
             <i class="fab fa-x-twitter"></i>
           </a>
           {% endif %}
 
           {% if site.blog_link %}
-          <a href="{{ site.blog_link }}"
-             aria-label="Blog">
+          <a href="{{ site.blog_link }}" aria-label="Blog">
             <i class="fas fa-pen-nib"></i>
           </a>
           {% endif %}
-
         </div>
+
       </header>
 
-      <!-- 从单独文件读取 Biography 和 Research Interests -->
       <section class="intro-content">
-        {% capture intro_content %}
-          {% include intro.md %}
-        {% endcapture %}
-
-        {{ intro_content | markdownify }}
+        {% include intro.html %}
       </section>
-
     </div>
 
-    <!-- 下半部分：Projects / Publications / Blog -->
     <main class="main-content">
-
       {{ content }}
 
       {% if site.enable_footnote %}
       <p class="footnote">
         <small>
           Powered by Jekyll and
-          <a href="https://github.com/yaoyao-liu/minimal-light"
-             target="_blank"
-             rel="noopener">
+          <a href="https://github.com/yaoyao-liu/minimal-light">
             Minimal Light
-          </a>
-          theme.
+          </a>.
         </small>
       </p>
       {% endif %}
-
     </main>
 
   </div>
@@ -176,7 +143,7 @@
       a.src=g;
       m.parentNode.insertBefore(a,m);
     })(window,document,'script',
-       'https://www.google-analytics.com/analytics.js','ga');
+      'https://www.google-analytics.com/analytics.js','ga');
 
     ga('create', '{{ site.google_analytics }}', 'auto');
     ga('send', 'pageview');
