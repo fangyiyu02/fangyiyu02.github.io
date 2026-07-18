@@ -4,17 +4,24 @@ layout: homepage
 
 ## Projects
 
-### [Project Title One](project-or-github-link)
+### AI-based Hardware Attacks (AHA!) Challenge
 
-Briefly introduce the research question, your contribution, the method,
-and the most important result.
+### 2.4-GHz Direct-Conversion CMOS Receiver Signal-Path Design
 
-**Links:** [Code](github-link) · [Poster](poster-link) · [Report](report-link)
+### Research on the Sensor Performance Based on WS₂
 
-### [Project Title Two](project-or-github-link)
+### Electronic Circuit and Structure Designing
 
-Briefly introduce your second representative research project.
+### Design of 4-bit Absolute Value Detector
 
-**Links:** [Code](github-link) · [Demo](demo-link)
+### Summer Engineering Project, Cambridge University
 
-{% include publications.md %}
+## Publications
+
+1. **Fangyi Yu**, "Research on the Development of LDO Chip Technology." *The 2nd International Conference on Machine Learning and Automation*, 2024.
+
+2. **Fangyi Yu**, "Research and Analysis on Artificial Intelligence in Integrated Circuits." *2nd International Conference on Artificial Intelligence, Database and Machine Learning (AIDML 2024)*, 2024.
+
+## Blog
+
+Blog posts are coming soon.
