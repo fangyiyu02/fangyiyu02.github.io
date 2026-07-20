@@ -10,17 +10,13 @@ layout: homepage
 
 ### Research on the Sensor Performance Based on WS₂
 
-### Electronic Circuit and Structure Designing
-
 ### Design of 4-bit Absolute Value Detector
-
-### Summer Engineering Project, Cambridge University
 
 ## Publications
 
-1. **Fangyi Yu**, "Research on the Development of LDO Chip Technology." *The 2nd International Conference on Machine Learning and Automation*, 2024.
+**Fangyi Yu**, "Research on the Development of LDO Chip Technology." *The 2nd International Conference on Machine Learning and Automation*, 2024.
 
-2. **Fangyi Yu**, "Research and Analysis on Artificial Intelligence in Integrated Circuits." *2nd International Conference on Artificial Intelligence, Database and Machine Learning (AIDML 2024)*, 2024.
+**Fangyi Yu**, "Research and Analysis on Artificial Intelligence in Integrated Circuits." *2nd International Conference on Artificial Intelligence, Database and Machine Learning (AIDML 2024)*, 2024.
 
 ## Blog
 
