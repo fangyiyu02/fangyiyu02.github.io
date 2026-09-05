@@ -4,13 +4,17 @@ layout: homepage
 
 ## Projects
 
-### AI-based Hardware Attacks (AHA!) Challenge
+### In Progress
 
-### 2.4-GHz Direct-Conversion CMOS Receiver Signal-Path Design
+### Completed
 
-### Research on the Sensor Performance Based on WS₂
+#### AI-based Hardware Attacks (AHA!) Challenge
 
-### Design of 4-bit Absolute Value Detector
+#### 2.4-GHz Direct-Conversion CMOS Receiver Signal-Path Design
+
+#### Research on the Sensor Performance Based on WS₂
+
+#### Design of 4-bit Absolute Value Detector
 
 ## Publications
 
