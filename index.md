@@ -8,7 +8,7 @@ layout: homepage
 
 #### Efficient Long-Context Inference for Diffusion Large Language Models
 
-*With Prof. Bo Yuan, Rutgers University | Feb. 2026 – Present*
+*With Prof. Bo Yuan, Rutgers University · Feb. 2026 – Present*
 
 - Identified the logits tensor, rather than the KV cache, as the dominant memory bottleneck.
 - Implemented chunked `lm_head` inference, reducing peak memory by approximately 40% while preserving bitwise-identical outputs.
