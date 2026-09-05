@@ -106,14 +106,14 @@ a:hover {
   margin-top: 0;
 }
 
-.main-content > .project-meta {
+.main-content .project-meta {
   margin: 0 0 0.8em;
   font-size: 0.9em;
   color: #6b7280;
   font-style: normal;
 }
 
-.main-content > .project-highlights {
+.main-content .project-highlights {
   margin: 0 0 2em;
   padding-left: 1.2em;
   line-height: 1.5;
@@ -123,4 +123,52 @@ a:hover {
 .project-highlights code {
   font-size: 0.875em;
   vertical-align: baseline;
+}
+
+/* Square image slots for project artwork. */
+.project-row {
+  display: grid;
+  grid-template-columns: 112px minmax(0, 1fr);
+  gap: 24px;
+  align-items: start;
+  margin: 0 0 2em;
+}
+
+.project-thumbnail {
+  width: 112px;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  background: #f3f4f6;
+}
+
+.project-thumbnail img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.project-body {
+  min-width: 0;
+}
+
+.project-body > .project-title {
+  margin: 0 0 0.3em;
+}
+
+.main-content .project-body > .project-highlights {
+  margin: 0;
+}
+
+@media screen and (max-width: 560px) {
+  .project-row {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.8em;
+  }
+
+  .project-thumbnail {
+    width: 80px;
+  }
 }
