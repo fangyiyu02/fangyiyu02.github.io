@@ -85,3 +85,13 @@ a:hover {
   color: #0b4f8a;
   text-decoration: underline;
 }
+
+/* Project status labels */
+.main-content > #in-progress,
+.main-content > #completed {
+  font-size: 0.85em;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #6b7280;
+  font-weight: 600;
+}
