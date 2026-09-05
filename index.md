@@ -30,7 +30,7 @@ With Prof. Bo Yuan, Rutgers University · Feb. 2026 – Present
 #### Conversational Generation of Timing Constraints (SDC) with LLMs
 {: .project-title }
 
-With Prof. Austin Rovinski, NYU · Sep. 2026 – Present
+With Prof. Austin Rovinski, New York University · Sep. 2026 – Present
 {: .project-meta }
 
 {: .project-highlights }
