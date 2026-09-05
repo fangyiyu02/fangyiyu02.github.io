@@ -16,6 +16,24 @@ With Prof. Bo Yuan, Rutgers University · Feb. 2026 – Present
 - Identified the logits tensor, rather than the KV cache, as the dominant memory bottleneck.
 - Implemented chunked `lm_head` inference, reducing peak memory by approximately 40% while preserving bitwise-identical outputs.
 
+#### Conversational Generation of Timing Constraints (SDC) with LLMs
+{: .project-title }
+
+With Prof. Austin Rovinski, NYU · Sep. 2026 – Present
+{: .project-meta }
+
+{: .project-highlights }
+- Exploring LLM-based generation of SDC timing constraints from natural-language design intent, evaluated end-to-end in the OpenROAD flow.
+
+#### A Deep-Research Benchmark for EDA
+{: .project-title }
+
+With Zeng Wang and Minghao Shao, New York University · Jul. 2026 – Present
+{: .project-meta }
+
+{: .project-highlights }
+- Designing a benchmark to evaluate deep-research agents on EDA research tasks; analyzed the construction of existing deep-research benchmarks (task curation, rubric design, LLM-as-judge protocols) to ground the benchmark's task and evaluation design.
+
 ### Completed
 
 #### AI-based Hardware Attacks (AHA!) Challenge
