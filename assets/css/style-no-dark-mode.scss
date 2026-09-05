@@ -89,9 +89,38 @@ a:hover {
 /* Project status labels */
 .main-content > #in-progress,
 .main-content > #completed {
+  margin: 1.5em 0 0.8em;
   font-size: 0.85em;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: #6b7280;
   font-weight: 600;
+}
+/* Keep each project's title, metadata, and highlights together. */
+.main-content > .project-title {
+  margin: 2em 0 0.3em;
+}
+
+.main-content > #in-progress + .project-title,
+.main-content > #completed + .project-title {
+  margin-top: 0;
+}
+
+.main-content > .project-meta {
+  margin: 0 0 0.8em;
+  font-size: 0.9em;
+  color: #6b7280;
+  font-style: normal;
+}
+
+.main-content > .project-highlights {
+  margin: 0 0 2em;
+  padding-left: 1.2em;
+  line-height: 1.5;
+  list-style-position: outside;
+}
+
+.project-highlights code {
+  font-size: 0.875em;
+  vertical-align: baseline;
 }
