@@ -39,14 +39,26 @@ With Zeng Wang and Minghao Shao, New York University · Jul. 2026 – Present
 #### AI-based Hardware Attacks (AHA!) Challenge
 {: .project-title }
 
+{: .project-highlights }
+- Red-team track: inserted LLM-generated hardware Trojans optimized for stealth, keeping PPA overhead under 1%.
+
 #### 2.4-GHz Direct-Conversion CMOS Receiver Signal-Path Design
 {: .project-title }
 
-#### Research on the Sensor Performance Based on WS₂
+{: .project-highlights }
+- Designed and simulated the receiver signal path (LNA, Gilbert-cell mixer, amplifier) in Cadence Virtuoso, balancing gain/noise trade-offs to reach 37 dB conversion gain.
+
+#### Gas Sensor Based on WS₂
 {: .project-title }
 
-#### Design of 4-bit Absolute Value Detector
+{: .project-highlights }
+- Fabricated a WS₂-based gas sensor and characterized its selectivity across alcohol and other target gases.
+
+#### Design of a 4-bit Absolute Value Detector
 {: .project-title }
+
+{: .project-highlights }
+- Implemented a 4-bit absolute-value detector from adders and comparators, verified in Multisim.
 
 ## Publications
 
