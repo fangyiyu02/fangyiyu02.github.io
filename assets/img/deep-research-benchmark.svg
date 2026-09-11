@@ -1,0 +1,31 @@
+<svg viewBox="0 0 300 210" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t3">
+  <title id="t3">Benchmark pipeline: agent, research task, scored results</title>
+  <rect x="0" y="0" width="300" height="210" rx="14" fill="#F8F9FA"/>
+
+  <!-- agent -->
+  <line x1="41" y1="82" x2="41" y2="70" stroke="#6B7280" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="41" cy="65" r="4.5" fill="#6B7280"/>
+  <rect x="18" y="82" width="46" height="42" rx="10" fill="none" stroke="#6B7280" stroke-width="4"/>
+  <circle cx="33" cy="102" r="4" fill="#6B7280"/>
+  <circle cx="49" cy="102" r="4" fill="#6B7280"/>
+
+  <!-- arrow -->
+  <line x1="76" y1="103" x2="100" y2="103" stroke="#9CA3AF" stroke-width="4" stroke-linecap="round"/>
+  <polyline points="94,96 104,103 94,110" fill="none" stroke="#9CA3AF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- task card -->
+  <rect x="112" y="74" width="62" height="60" rx="8" fill="none" stroke="#6B7280" stroke-width="4"/>
+  <line x1="124" y1="92" x2="162" y2="92" stroke="#9CA3AF" stroke-width="4" stroke-linecap="round"/>
+  <line x1="124" y1="104" x2="162" y2="104" stroke="#9CA3AF" stroke-width="4" stroke-linecap="round"/>
+  <line x1="124" y1="116" x2="148" y2="116" stroke="#9CA3AF" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- arrow -->
+  <line x1="186" y1="103" x2="210" y2="103" stroke="#9CA3AF" stroke-width="4" stroke-linecap="round"/>
+  <polyline points="204,96 214,103 204,110" fill="none" stroke="#9CA3AF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- score bars -->
+  <rect x="224" y="110" width="14" height="24" rx="3" fill="#2B6CB0"/>
+  <rect x="246" y="96" width="14" height="38" rx="3" fill="#2B6CB0"/>
+  <rect x="268" y="80" width="14" height="54" rx="3" fill="#2B6CB0"/>
+  <line x1="218" y1="140" x2="288" y2="140" stroke="#9CA3AF" stroke-width="4" stroke-linecap="round"/>
+</svg>

@@ -44,7 +44,9 @@ With Prof. Austin Rovinski, New York University · Sep. 2026 – Present
 </div>
 
 <div class="project-row" markdown="1">
-<div class="project-thumbnail" aria-hidden="true"></div>
+<div class="project-thumbnail project-thumbnail--artwork">
+  <img src="{{ '/assets/img/deep-research-benchmark.svg' | relative_url }}" alt="Benchmark pipeline: agent, research task, scored results" width="300" height="210" />
+</div>
 <div class="project-body" markdown="1">
 
 #### A Deep-Research Benchmark for EDA
