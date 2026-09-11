@@ -1,0 +1,19 @@
+<svg viewBox="0 0 300 210" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t1">
+  <title id="t1">Long-context dLLM inference: memory grows with context length up to 128K</title>
+  <rect x="0" y="0" width="300" height="210" rx="14" fill="#F8F9FA"/>
+
+  <!-- token row: partially denoised sequence -->
+  <rect x="74" y="44" width="18" height="18" rx="3" fill="#9CA3AF"/>
+  <rect x="100" y="44" width="18" height="18" rx="3" fill="none" stroke="#9CA3AF" stroke-width="3.5"/>
+  <rect x="126" y="44" width="18" height="18" rx="3" fill="#9CA3AF"/>
+  <rect x="152" y="44" width="18" height="18" rx="3" fill="none" stroke="#9CA3AF" stroke-width="3.5"/>
+
+  <!-- axes -->
+  <path d="M52 38 V168 H262" fill="none" stroke="#9CA3AF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- linear memory growth -->
+  <line x1="58" y1="150" x2="240" y2="54" stroke="#2B6CB0" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="240" cy="54" r="7" fill="#2B6CB0"/>
+
+  <text x="240" y="192" text-anchor="middle" font-family="ui-sans-serif, system-ui, sans-serif" font-size="19" fill="#6B7280">128K</text>
+</svg>

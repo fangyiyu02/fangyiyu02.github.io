@@ -7,7 +7,9 @@ layout: homepage
 ### In Progress
 
 <div class="project-row" markdown="1">
-<div class="project-thumbnail" aria-hidden="true"></div>
+<div class="project-thumbnail">
+  <img src="{{ '/assets/img/efficient-long-context.svg' | relative_url }}" alt="Long-context dLLM inference: memory grows with context length up to 128K" width="300" height="210" />
+</div>
 <div class="project-body" markdown="1">
 
 #### Efficient Long-Context Inference for Diffusion Large Language Models
