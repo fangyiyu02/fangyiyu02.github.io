@@ -1,0 +1,21 @@
+<svg viewBox="0 0 300 210" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t2">
+  <title id="t2">Conversational generation of SDC timing constraints</title>
+  <rect x="0" y="0" width="300" height="210" rx="14" fill="#F8F9FA"/>
+
+  <!-- speech bubble -->
+  <rect x="40" y="30" width="92" height="48" rx="24" fill="none" stroke="#9CA3AF" stroke-width="4"/>
+  <circle cx="66" cy="54" r="5" fill="#9CA3AF"/>
+  <circle cx="86" cy="54" r="5" fill="#9CA3AF"/>
+  <circle cx="106" cy="54" r="5" fill="#9CA3AF"/>
+  <rect x="99" y="74" width="22" height="8" fill="#F8F9FA"/>
+  <polyline points="100,77 110,94 120,77" fill="none" stroke="#9CA3AF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- code card with SDC syntax -->
+  <rect x="64" y="112" width="196" height="68" rx="10" fill="#37414F"/>
+  <text x="80" y="140" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="16">
+    <tspan fill="#8EC7F2">create_clock</tspan>
+  </text>
+  <text x="80" y="166" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="16">
+    <tspan fill="#C9D2DE">-period 10 [clk]</tspan>
+  </text>
+</svg>

@@ -26,7 +26,9 @@ With Prof. Bo Yuan, Rutgers University · Feb. 2026 – Present
 </div>
 
 <div class="project-row" markdown="1">
-<div class="project-thumbnail" aria-hidden="true"></div>
+<div class="project-thumbnail project-thumbnail--artwork">
+  <img src="{{ '/assets/img/conversational-sdc.svg' | relative_url }}" alt="Conversational generation of SDC timing constraints" width="300" height="210" />
+</div>
 <div class="project-body" markdown="1">
 
 #### Conversational Generation of Timing Constraints (SDC) with LLMs
