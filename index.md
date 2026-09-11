@@ -7,7 +7,7 @@ layout: homepage
 ### In Progress
 
 <div class="project-row" markdown="1">
-<div class="project-thumbnail">
+<div class="project-thumbnail project-thumbnail--artwork">
   <img src="{{ '/assets/img/efficient-long-context.svg' | relative_url }}" alt="Long-context dLLM inference: memory grows with context length up to 128K" width="300" height="210" />
 </div>
 <div class="project-body" markdown="1">

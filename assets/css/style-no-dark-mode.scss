@@ -150,6 +150,17 @@ a:hover {
   object-fit: contain;
 }
 
+.project-thumbnail--artwork {
+  aspect-ratio: auto;
+  background: #f8f9fa;
+  box-shadow: 0 6px 12px -6px rgba(17, 24, 39, 0.25),
+    0 2px 4px rgba(17, 24, 39, 0.06);
+}
+
+.project-thumbnail--artwork img {
+  height: auto;
+}
+
 .project-body {
   min-width: 0;
 }
