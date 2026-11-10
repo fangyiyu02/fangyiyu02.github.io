@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fangyi Yu</title>
+<meta name="description" content="Fangyi Yu — M.S. student in Electrical Engineering at New York University. LLMs for hardware design automation and efficient LLM inference. Applying to Ph.D. programs for Fall 2027.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23F2620F'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' font-weight='700' fill='white' text-anchor='middle'%3EFY%3C/text%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Fangyi Yu">
+<meta property="og:description" content="M.S. student in Electrical Engineering at NYU. LLMs for hardware design automation and efficient LLM inference. Applying to Ph.D. programs for Fall 2027.">
+<meta property="og:url" content="https://fangyiyu02.github.io/">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --accent: #F2620F;
+    --accent-text: #C24E0B;
+    --ink: #1F1B18;
+    --ink-soft: #6E655E;
+    --rule: #1F1B18;
+    --hair: #E8E0D7;
+    --paper: #FFFCF8;
+    --serif: "Crimson Pro", Georgia, "Times New Roman", serif;
+    --sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font-family: var(--sans); font-size: 16px; line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--accent-text); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color .15s; }
+  a:hover { border-bottom-color: currentColor; }
+  ::selection { background: #FFD9BF; }
+
+  .wrap {
+    max-width: 1140px; margin: 0 auto; padding: 72px 32px 48px;
+    display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: 64px;
+  }
+
+  .side { position: sticky; top: 56px; align-self: start; }
+  .name {
+    font-family: var(--serif); font-weight: 600; font-size: 50px; line-height: 1.0;
+    letter-spacing: -0.01em; margin: 0 0 16px;
+  }
+  .name span { color: var(--accent); display: block; }
+  .role { color: var(--ink-soft); font-size: 15px; line-height: 1.55; margin: 0 0 22px; }
+  .links { font-size: 15px; margin: 0 0 28px; line-height: 2; }
+  .links .sep { color: var(--hair); margin: 0 6px; }
+  .side-label {
+    font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+    color: var(--ink-soft); margin: 0 0 8px;
+  }
+  .interests { list-style: none; margin: 0; padding: 0; font-size: 15px; line-height: 1.9; }
+  .interests li::before { content: "—"; color: var(--accent); margin-right: 8px; }
+
+  .lead {
+    font-family: var(--serif); font-weight: 400; font-size: 31px; line-height: 1.3;
+    letter-spacing: -0.005em; margin: 0 0 22px; max-width: 30em;
+  }
+  .lead em { font-style: normal; color: var(--accent); }
+  .bio p { margin: 0 0 12px; max-width: 42em; color: #3A332E; }
+  .bio b { font-weight: 700; color: var(--ink); }
+  .bio .seeking { display: inline-block; margin-top: 6px; padding: 6px 14px; border-left: 3px solid var(--accent); background: #FFF1E6; color: var(--ink); font-weight: 600; }
+
+  section { margin-top: 64px; }
+  .sec-head { display: flex; align-items: baseline; gap: 14px; margin: 0 0 24px; }
+  .sec-head h2 {
+    font-family: var(--sans); font-weight: 600; font-size: 21px; letter-spacing: -0.01em; margin: 0; white-space: nowrap;
+  }
+  .sec-head .line { flex: 1; border-bottom: 1.5px solid var(--rule); transform: translateY(-5px); }
+
+  .item {
+    display: grid; grid-template-columns: 52px minmax(0, 1fr); gap: 8px;
+    padding: 18px 0; border-bottom: 1px solid var(--hair);
+  }
+  .item:first-of-type { padding-top: 4px; }
+  .item:last-child { border-bottom: 0; }
+  .num { font-family: var(--sans); font-weight: 600; font-size: 15px; color: var(--accent); line-height: 1.6; }
+  .item h3 { font-size: 17px; font-weight: 600; letter-spacing: -0.005em; line-height: 1.4; margin: 0 0 4px; }
+  .meta { font-size: 14px; color: var(--ink-soft); margin: 0 0 8px; }
+  .meta .tag { color: var(--accent-text); font-weight: 500; }
+  .meta .dot { margin: 0 7px; color: #C9BFB5; }
+  .desc { margin: 0; font-size: 15.5px; color: #3A332E; max-width: 46em; }
+
+  .pub-title { font-weight: 600; }
+  .venue { font-style: italic; color: var(--ink-soft); }
+
+  .proj {
+    display: grid; grid-template-columns: 260px minmax(0, 1fr); gap: 26px;
+    padding: 22px 0; border-bottom: 1px solid var(--hair);
+  }
+  .proj:first-of-type { padding-top: 4px; }
+  .proj:last-child { border-bottom: 0; }
+  .thumb {
+    width: 260px; aspect-ratio: 16 / 10; border-radius: 8px; overflow: hidden;
+    border: 1px solid var(--hair); background: #fff;
+  }
+  .thumb.img { padding: 6px; }
+  .thumb img { width: 100%; height: 100%; object-fit: contain; display: block; }
+  .thumb.ph {
+    background: #F6EEE6; display: flex; align-items: flex-end; padding: 12px 14px;
+    font-family: var(--serif); font-size: 21px; line-height: 1.15; color: var(--accent-text);
+  }
+  .proj h3 { font-size: 17px; font-weight: 600; letter-spacing: -0.005em; line-height: 1.4; margin: 0 0 4px; }
+
+  .more { margin: 8px 0 0; font-size: 14.5px; font-weight: 500; }
+  .more a::after { content: " \2192"; }
+
+  footer { margin-top: 72px; padding-top: 18px; border-top: 1px solid var(--hair); color: var(--ink-soft); font-size: 13.5px; }
+
+  @media (max-width: 860px) {
+    .wrap { grid-template-columns: 1fr; gap: 40px; padding: 44px 22px 36px; }
+    .side { position: static; }
+    .name { font-size: 44px; }
+    .name span { display: inline; }
+    .lead { font-size: 26px; }
+    .item { grid-template-columns: 44px minmax(0, 1fr); }
+    .proj { grid-template-columns: 1fr; gap: 12px; }
+    .thumb { width: 100%; max-width: 360px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <aside class="side">
+    <h1 class="name">Fangyi <span>Yu</span></h1>
+    <p class="role">M.S. student in Electrical Engineering<br>New York University<br>New York, NY</p>
+    <div class="links">
+      <a href="mailto:fy2307@nyu.edu">fy2307@nyu.edu</a><br>
+      <a href="https://github.com/fangyiyu02">GitHub</a><span class="sep">/</span><a href="https://www.linkedin.com/in/fangyi-yu-7bb09236a/">LinkedIn</a><span class="sep">/</span><a href="files/CV_Fangyi_Yu.pdf">CV</a>
+    </div>
+    <p class="side-label">Research interests</p>
+    <ul class="interests">
+      <li>LLMs for EDA</li>
+      <li>LLM agents</li>
+      <li>Efficient LLM inference</li>
+      <li>Model mechanisms</li>
+    </ul>
+  </aside>
+
+  <main>
+    <div class="bio">
+      <p class="lead">I build and evaluate LLM systems that <em>automate hardware design</em>, from RTL to GDS.</p>
+      <p>I am an M.S. student in Electrical Engineering at <b>New York University</b>. I received my B.S. in Microelectronics Science and Engineering from <b>Lanzhou University</b> in 2025.</p>
+      <p>Beyond hardware design, I explore LLMs broadly, from KV cache optimization, quantization, and speculative decoding to the internal mechanisms of vision-language models, LLMs, and diffusion language models.</p>
+      <p class="seeking">I am applying to Ph.D. programs for Fall 2027.</p>
+    </div>
+
+    <section id="ongoing">
+      <div class="sec-head"><h2>Ongoing projects</h2><span class="line"></span></div>
+      <div class="list">
+        <div class="proj">
+          <div class="thumb img"><img src="images/sdc_error_attribution.png" alt="Error attribution of LLM-generated SDC across four models" loading="lazy"></div>
+          <div>
+            <h3>Intent-Aware LLMs for Conversational Timing Constraint Generation</h3>
+            <p class="meta"><span class="tag">LLM for EDA</span><span class="dot">·</span>Advised by Prof. Austin Rovinski, New York University<span class="dot">·</span>Sep 2026 – Present</p>
+            <p class="desc">A two-tier benchmark for LLM-generated SDC timing constraints, scored with syntax, semantic, and timing-report checks in OpenROAD; now improving generation with LoRA fine-tuning.</p>
+          </div>
+        </div>
+        <div class="proj">
+          <div class="thumb img"><img src="images/eda_deep_research_landscape.png" alt="LLM for EDA paper landscape: 674 papers across 14 topics" loading="lazy"></div>
+          <div>
+            <h3>Deep Research Benchmark for EDA</h3>
+            <p class="meta"><span class="tag">LLM agents</span><span class="dot">·</span>With PhD students Zeng Wang and Minghao Shao, New York University<span class="dot">·</span>Jul 2026 – Present</p>
+            <p class="desc">A benchmark of 100+ questions across 14 EDA research topics for evaluating deep-research LLM agents.</p>
+          </div>
+        </div>
+        <div class="proj">
+          <div class="thumb img"><img src="images/vlm_read_window.png" alt="Qwen3.5-9B hybrid VLM: where visual information lives and when it is read" loading="lazy"></div>
+          <div>
+            <h3>Recurrent-State Control of Retrieval in Hybrid Vision-Language Models</h3>
+            <p class="meta"><span class="tag">Model mechanisms</span><span class="dot">·</span>Team project, New York University<span class="dot">·</span>Oct 2026 – Present</p>
+            <p class="desc">Studies whether hybrid VLMs retrieve answers from the recurrent state or the KV cache; I lead the prompt-injection evaluation. Manuscript in preparation.</p>
+          </div>
+        </div>
+        <div class="proj">
+          <div class="thumb img"><img src="images/spec_decoding_pipeline.png" alt="Block speculative decoding pipeline: target context, semi-autoregressive draft, prefix scheduling, and target verification" loading="lazy"></div>
+          <div>
+            <h3>Diffusion-Based Speculative Decoding for Efficient LLM Inference</h3>
+            <p class="meta"><span class="tag">Efficient inference</span><span class="dot">·</span>Advised by Prof. Bo Yuan, Rutgers University<span class="dot">·</span>Mar 2026 – Present</p>
+            <p class="desc">Memory-efficient long-context diffusion LLM inference, drafter quantization, and training-free verification rules for diffusion-based speculative decoding.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="past">
+      <div class="sec-head"><h2>Past projects</h2><span class="line"></span></div>
+      <div class="list">
+        <div class="proj">
+          <div class="thumb img"><img src="images/rf_receiver_schematic.png" alt="Schematic of the 2.4-GHz direct-conversion receiver signal path" loading="lazy"></div>
+          <div>
+            <h3>2.4-GHz Direct-Conversion CMOS Receiver Signal-Path Design</h3>
+            <p class="meta"><span class="tag">Analog / RF</span><span class="dot">·</span>Course project, Prof. Hamed Rahmani, New York University<span class="dot">·</span>Apr – May 2026</p>
+            <p class="desc">LNA, Gilbert-cell mixer, and IF stage in Cadence Virtuoso, reaching 37.1 dB gain within a 100 nH on-chip inductance budget.</p>
+            <p class="more"><a href="files/Yu_2.4GHz_Receiver_Signal_Path.pdf">Project report (PDF)</a></p>
+          </div>
+        </div>
+        <div class="proj">
+          <div class="thumb img"><img src="images/aha_trojan_flow.png" alt="Iterative LLM-assisted hardware Trojan design flow" loading="lazy"></div>
+          <div>
+            <h3>AI-based Hardware Attacks (AHA!) Challenge</h3>
+            <p class="meta"><span class="tag">Hardware security</span><span class="dot">·</span>Course project, Prof. Ramesh Karri, New York University<span class="dot">·</span>Apr 2026</p>
+            <p class="desc">Three LLM-generated hardware Trojans in the Secworks AES core, including a time bomb that leaks part of the secret key.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications">
+      <div class="sec-head"><h2>Publications</h2><span class="line"></span></div>
+      <div class="list pubs">
+        <div class="item">
+          <span class="num">2024</span>
+          <div><span class="pub-title">Research on the Development of LDO Chip Technology.</span><br><b>Fangyi Yu</b>. <span class="venue">The 2nd International Conference on Machine Learning and Automation</span>, 2024.</div>
+        </div>
+        <div class="item">
+          <span class="num">2024</span>
+          <div><span class="pub-title">Research and Analysis on Artificial Intelligence in Integrated Circuits.</span><br><b>Fangyi Yu</b>. <span class="venue">2nd International Conference on Artificial Intelligence, Database and Machine Learning (AIDML 2024)</span>, 2024.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="sec-head"><h2>Education</h2><span class="line"></span></div>
+      <div class="list edu">
+        <div class="item">
+          <span class="num">2025</span>
+          <div><h3>M.S. in Electrical Engineering</h3><p class="meta" style="margin:0">New York University<span class="dot">·</span>Sep 2025 – Present</p></div>
+        </div>
+        <div class="item">
+          <span class="num">2021</span>
+          <div><h3>B.S. in Microelectronics Science and Engineering</h3><p class="meta" style="margin:0">Lanzhou University<span class="dot">·</span>Sep 2021 – Jun 2025</p></div>
+        </div>
+      </div>
+    </section>
+
+    <footer>Last updated November 2026</footer>
+  </main>
+</div>
+</body>
+</html>
