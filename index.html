@@ -109,6 +109,7 @@
 
   .more { margin: 8px 0 0; font-size: 14.5px; font-weight: 500; }
   .more a::after { content: " \2192"; }
+  .more .sep { color: var(--hair); margin: 0 8px; }
 
   footer { margin-top: 72px; padding-top: 18px; border-top: 1px solid var(--hair); color: var(--ink-soft); font-size: 13.5px; }
 
@@ -131,7 +132,7 @@
     <p class="role">M.S. student in Electrical Engineering<br>New York University<br>New York, NY</p>
     <div class="links">
       <a href="mailto:fy2307@nyu.edu">fy2307@nyu.edu</a><br>
-      <a href="https://github.com/fangyiyu02">GitHub</a><span class="sep">/</span><a href="https://www.linkedin.com/in/fangyi-yu-7bb09236a/">LinkedIn</a><span class="sep">/</span><a href="files/CV_Fangyi_Yu.pdf">CV</a>
+      <a href="https://github.com/fangyiyu02/research-projects">GitHub</a><span class="sep">/</span><a href="https://www.linkedin.com/in/fangyi-yu-7bb09236a/">LinkedIn</a><span class="sep">/</span><a href="files/CV_Fangyi_Yu.pdf">CV</a>
     </div>
     <p class="side-label">Research interests</p>
     <ul class="interests">
@@ -154,7 +155,7 @@
       <div class="sec-head"><h2>Ongoing projects</h2><span class="line"></span></div>
       <div class="list">
         <div class="proj">
-          <div class="thumb img"><img src="images/sdc_error_attribution.png" alt="Error attribution of LLM-generated SDC across four models" loading="lazy"></div>
+          <div class="thumb img"><img src="images/sdc_bench_overview.png" alt="SDC-Bench overview: LLM agent task with simulated user, OpenSTA-based evaluation pipeline, and recorded results" loading="lazy"></div>
           <div>
             <h3>Intent-Aware LLMs for Conversational Timing Constraint Generation</h3>
             <p class="meta"><span class="tag">LLM for EDA</span><span class="dot">·</span>Advised by Prof. Austin Rovinski, New York University<span class="dot">·</span>Sep 2026 – Present</p>
@@ -183,6 +184,7 @@
             <h3>Diffusion-Based Speculative Decoding for Efficient LLM Inference</h3>
             <p class="meta"><span class="tag">Efficient inference</span><span class="dot">·</span>Advised by Prof. Bo Yuan, Rutgers University<span class="dot">·</span>Mar 2026 – Present</p>
             <p class="desc">Memory-efficient long-context diffusion LLM inference, drafter quantization, and training-free verification rules for diffusion-based speculative decoding.</p>
+            <p class="more">Code: <a href="https://github.com/fangyiyu02/research-projects/tree/main/speculative-decoding">speculative decoding</a><span class="sep">/</span><a href="https://github.com/fangyiyu02/research-projects/tree/main/dllm-long-context">long-context dLLM</a></p>
           </div>
         </div>
       </div>
@@ -206,6 +208,7 @@
             <h3>AI-based Hardware Attacks (AHA!) Challenge</h3>
             <p class="meta"><span class="tag">Hardware security</span><span class="dot">·</span>Course project, Prof. Ramesh Karri, New York University<span class="dot">·</span>Apr 2026</p>
             <p class="desc">Three LLM-generated hardware Trojans in the Secworks AES core, including a time bomb that leaks part of the secret key.</p>
+            <p class="more"><a href="https://github.com/fangyiyu02/research-projects/tree/main/hardware/aha-hardware-trojan">Code and PPA reports (GitHub)</a></p>
           </div>
         </div>
         <div class="proj">
