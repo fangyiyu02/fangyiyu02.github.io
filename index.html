@@ -117,6 +117,12 @@
   .beyond p { margin: 0 0 10px; font-size: 15.5px; color: #3A332E; max-width: 42em; }
   .beyond figcaption { font-size: 13px; color: var(--ink-soft); margin-top: 6px; }
 
+  .gallery { display: flex; gap: 12px; margin-top: 26px; }
+  .gallery figure { margin: 0; min-width: 0; }
+  .gallery a { border: 0; display: block; }
+  .gallery img { width: 100%; height: auto; display: block; border-radius: 8px; border: 1px solid var(--hair); }
+  .gallery figcaption { font-size: 13px; color: var(--ink-soft); margin-top: 6px; }
+
   footer { margin-top: 72px; padding-top: 18px; border-top: 1px solid var(--hair); color: var(--ink-soft); font-size: 13.5px; }
 
   @media (max-height: 820px) { .side { position: static; } }
@@ -131,6 +137,8 @@
     .proj { grid-template-columns: 1fr; gap: 12px; }
     .thumb { width: 100%; max-width: 360px; }
     .beyond { grid-template-columns: 1fr; gap: 14px; }
+    .gallery { flex-direction: column; }
+    .gallery figure { flex: none !important; }
   }
 </style>
 </head>
@@ -274,6 +282,11 @@
           <p>I love getting out to explore nature, and climbing Mount Everest is one of my dreams.</p>
           <p>And I have a very cute cat named Pidan. Thanks to this little guy for bringing so much joy and love into my life.</p>
         </div>
+      </div>
+      <div class="gallery">
+        <figure style="flex: 1.333"><a href="images/travel_newyork_2026.jpg"><img src="images/travel_newyork_2026.jpg" alt="Lower Manhattan skyline at sunset across the East River" loading="lazy"></a><figcaption>New York, 2026</figcaption></figure>
+        <figure style="flex: 1.333"><a href="images/travel_cambridge_2023.jpg"><img src="images/travel_cambridge_2023.jpg" alt="Selfie outside the Cavendish Laboratory, Cambridge" loading="lazy"></a><figcaption>Cavendish Laboratory, Cambridge, 2023</figcaption></figure>
+        <figure style="flex: 0.75"><a href="images/travel_jeju_2024.jpg"><img src="images/travel_jeju_2024.jpg" alt="Street with Korean signs at golden hour in Jeju" loading="lazy"></a><figcaption>Jeju, 2024</figcaption></figure>
       </div>
     </section>
 
