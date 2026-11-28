@@ -111,6 +111,11 @@
   .more a::after { content: " \2192"; }
   .more .sep { color: var(--hair); margin: 0 8px; }
 
+  .beyond { display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 26px; align-items: start; }
+  .beyond img { width: 200px; border-radius: 8px; border: 1px solid var(--hair); display: block; }
+  .beyond p { margin: 0 0 10px; font-size: 15.5px; color: #3A332E; max-width: 42em; }
+  .beyond figcaption { font-size: 13px; color: var(--ink-soft); margin-top: 6px; }
+
   footer { margin-top: 72px; padding-top: 18px; border-top: 1px solid var(--hair); color: var(--ink-soft); font-size: 13.5px; }
 
   @media (max-width: 860px) {
@@ -122,6 +127,7 @@
     .item { grid-template-columns: 44px minmax(0, 1fr); }
     .proj { grid-template-columns: 1fr; gap: 12px; }
     .thumb { width: 100%; max-width: 360px; }
+    .beyond { grid-template-columns: 1fr; gap: 14px; }
   }
 </style>
 </head>
@@ -250,6 +256,19 @@
         <div class="item">
           <span class="num">2021</span>
           <div><h3>B.S. in Microelectronics Science and Engineering</h3><p class="meta" style="margin:0">Lanzhou University<span class="dot">·</span>Sep 2021 – Jun 2025</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="beyond">
+      <div class="sec-head"><h2>Beyond research</h2><span class="line"></span></div>
+      <div class="beyond">
+        <figure style="margin:0"><img src="images/pidan.jpg" alt="Pidan, a golden British Shorthair cat, raising one paw" loading="lazy"><figcaption>Pidan says hi.</figcaption></figure>
+        <div>
+          <p>I listen to all kinds of music, with a special love for electronic music.</p>
+          <p>I'm also a gamer, mostly Valorant and The Legend of Zelda.</p>
+          <p>I love getting out to explore nature, and I'm dreaming of going back to Tibet.</p>
+          <p>And I have a very cute cat named Pidan. Thanks to this little guy for bringing so much joy and love into my life.</p>
         </div>
       </div>
     </section>
